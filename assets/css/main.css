@@ -1,5 +1,8 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i"); */
+/* @import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-gb-web@latest/style.css"); */
+@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css");
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*
 	Story by HTML5 UP
@@ -157,9 +160,9 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'LXGW WenKai GB Screen', "Source Sans Pro", sans-serif;
 		font-size: 1rem;
-		font-weight: 300;
+		font-weight: normal;
 		line-height: 1.65;
 	}
 
@@ -176,7 +179,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		font-weight: 400;
+		font-weight: bold;
 	}
 
 	em, i {
@@ -249,7 +252,8 @@ input, select, textarea {
 
 	code {
 		border-radius: 4px;
-		font-family: "Courier New", monospace;
+		font-family: "Courier Prime", monospace;
+		font-weight: 400;
 		font-size: 0.9em;
 		margin: 0 0.25rem;
 		padding: 0.25rem 0.325rem;
@@ -257,7 +261,8 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: "Courier Prime", monospace;
+		font-weight: 400;
 		font-size: 0.9em;
 		margin: 0 0 2rem 0;
 	}
@@ -2424,7 +2429,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Font Awesome 6 Free';
 				font-weight: 900;
 			}
 
@@ -2566,7 +2571,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Font Awesome 6 Free';
 			font-weight: 400;
 		}
 
@@ -2583,7 +2588,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Font Awesome 6 Brands';
 		}
 
 		.icon.style2:before {
@@ -2603,6 +2608,28 @@ input, select, textarea {
 				font-size: 1.25rem;
 			}
 
+		.icon.style3 {
+			border-radius: 50%;
+			width: 2.75em;
+			height: 2.75em;
+			display: inline-block;
+			align-items: center; /* 垂直居中 */
+			justify-content: center; /* 水平居中 */
+			font-size: 1.25em; /* 设定字体大小，以便与图标匹配 */
+			box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+		}
+		
+		.icon img {
+			pointer-events: none;
+			width: 50%;
+			height: 50%;
+			object-fit: contain; /* 确保图片按比例缩放，不会被裁剪 */
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%); /* 使图片居中 */
+		}
+					
 	a.icon.style2:before {
 		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2615,6 +2642,7 @@ input, select, textarea {
 	}
 
 	a.icon.style2:hover:before {
+		/* animation: fa-bounce 1s; */
 		box-shadow: inset 0 0 0 1px #47D3E5;
 		color: #47D3E5;
 	}
@@ -6809,7 +6837,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Font Awesome 6 Free';
 				font-weight: 900;
 			}
 
