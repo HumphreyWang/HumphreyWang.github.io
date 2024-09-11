@@ -341,7 +341,7 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left-color: rgba(0, 0, 0, 0.2);
+		border-left-color: rgba(0, 0, 0, 0.4);
 	}
 
 	code {
@@ -2608,28 +2608,6 @@ input, select, textarea {
 				font-size: 1.25rem;
 			}
 
-		.icon.style3 {
-			border-radius: 50%;
-			width: 2.75em;
-			height: 2.75em;
-			display: inline-block;
-			align-items: center; /* 垂直居中 */
-			justify-content: center; /* 水平居中 */
-			font-size: 1.25em; /* 设定字体大小，以便与图标匹配 */
-			box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-		}
-		
-		.icon img {
-			pointer-events: none;
-			width: 50%;
-			height: 50%;
-			object-fit: contain; /* 确保图片按比例缩放，不会被裁剪 */
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%); /* 使图片居中 */
-		}
-					
 	a.icon.style2:before {
 		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2642,7 +2620,6 @@ input, select, textarea {
 	}
 
 	a.icon.style2:hover:before {
-		/* animation: fa-bounce 1s; */
 		box-shadow: inset 0 0 0 1px #47D3E5;
 		color: #47D3E5;
 	}
@@ -2795,6 +2772,7 @@ input, select, textarea {
 		ul.actions li {
 			padding: 0 0 0 1rem;
 			vertical-align: middle;
+			opacity: 1;
 		}
 
 		ul.actions.special {
@@ -2912,6 +2890,7 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 0.75rem 0 0;
+			opacity: 1;
 		}
 
 			ul.icons li:last-child {
@@ -8309,7 +8288,7 @@ input, select, textarea {
 			}
 
 			#wrapper > .invert blockquote {
-				border-left-color: white;
+				border-left-color: rgba(0, 0, 0, 0.2);
 			}
 
 			#wrapper > .invert code {

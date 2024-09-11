@@ -10,6 +10,25 @@
 		$body = $('body'),
 		$wrapper = $('#wrapper');
 
+	// 等待文档加载完毕
+	$(document).ready(function() {
+		// 获取 fist section 的 offsetTop
+		var firstOffsetTop = $('#first').offset().top;
+
+		// 监听页面滚动事件
+		$window.scroll(function() {
+			// 获取当前滚动位置
+			var scrollPosition = $window.scrollTop();
+
+			// 如果滚动位置超过 first section，显示导航栏
+			if (scrollPosition >= firstOffsetTop-300) {
+				$('nav').fadeIn(300);
+			} else {
+				$('nav').fadeOut(300);
+			}
+		});
+	});
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
