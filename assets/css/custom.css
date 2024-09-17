@@ -1,6 +1,81 @@
+.banner.style5 .content {
+    width: 60rem;
+}
+
+.banner.style5 .image img {
+    pointer-events: none;
+    position: fixed;
+}
+
+.banner.style5 .image {
+    opacity: 1;
+    z-index: -1;
+}
+
+.background{
+    position: relative;
+    z-index: -2;
+}
+
+#wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+#wrapper > .invert {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#wrapper > .color0 {
+    background-color: #101f3060;
+    /* background-color: transparent; */
+}
+#wrapper > .color1 {
+    background-color: #30363db3;
+}
+#wrapper > .color2 {
+    background-color: #db8993;
+}
+#wrapper > .color3 {
+    background-color: #ab7aad;
+}
+#wrapper > .color4 {
+    background-color: #897cad;
+}
+#wrapper > .color5 {
+    background-color: #7794ce;
+}
+#wrapper > .color6 {
+    background-color: #64abb4;
+}
+#wrapper > .color7 {
+    background-color: #6ba78c;
+}
+
+blockquote {
+    border-left-color: rgba(0, 0, 0, 0.4);
+}
+
+#wrapper > .invert blockquote {
+    border-left-color: rgba(0, 0, 0, 0.2);
+}
 
 p, li, td, th, blockquote {
     opacity: 0.8;
+}
+
+/* p {
+    text-align: justify;
+    text-align-last: center;
+} */
+
+ul.actions li {
+    opacity: 1;
+}
+
+ul.icons li {
+    opacity: 1;
 }
 
 .icon.style3 {
@@ -11,7 +86,7 @@ p, li, td, th, blockquote {
     align-items: center; /* 垂直居中 */
     justify-content: center; /* 水平居中 */
     font-size: 1.25em; /* 设定字体大小，以便与图标匹配 */
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
 .icon img {
@@ -27,13 +102,13 @@ p, li, td, th, blockquote {
 
 /* navigation bar */
 
-#wrapper > nav {
+#wrapper > nav.invert {
     display: none;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgb(147, 181, 207, 0.9); /* 背景色带透明度 */
+    background-color: #144a74cc;
     transition: top 0.3s ease-in-out;
     padding: 5px; /* 内边距 */
 }
@@ -58,10 +133,10 @@ nav.show {
 }
 
 .button.navbar{
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: bold;
-    height: 1.3em;
-    line-height: 1.3em;
+    height: 1.5em;
+    line-height: 1.4em;
     border-radius: 0;
     letter-spacing: 0;
     box-shadow: none;
@@ -70,10 +145,14 @@ nav.show {
 }
 
 .button .icon {
-    height: 1em;
+    height: 1.3em;
     width: auto;
     vertical-align: middle;
     pointer-events: none;
+}
+
+#wrapper > .invert .button.navbar{
+    box-shadow: none;
 }
 
 .button.navbar:hover{

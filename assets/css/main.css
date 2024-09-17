@@ -341,7 +341,7 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left-color: rgba(0, 0, 0, 0.4);
+		border-left-color: rgba(0, 0, 0, 0.2);
 	}
 
 	code {
@@ -2772,7 +2772,6 @@ input, select, textarea {
 		ul.actions li {
 			padding: 0 0 0 1rem;
 			vertical-align: middle;
-			opacity: 1;
 		}
 
 		ul.actions.special {
@@ -2890,7 +2889,6 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 0.75rem 0 0;
-			opacity: 1;
 		}
 
 			ul.icons li:last-child {
@@ -8288,7 +8286,7 @@ input, select, textarea {
 			}
 
 			#wrapper > .invert blockquote {
-				border-left-color: rgba(0, 0, 0, 0.2);
+				border-left-color: white;
 			}
 
 			#wrapper > .invert code {
