@@ -65,10 +65,32 @@ p, li, td, th, blockquote {
     opacity: 0.8;
 }
 
-/* p {
+p {
     text-align: justify;
+}
+
+.banner.style5 {
     text-align-last: center;
-} */
+}
+
+.spotlight.style1.content-align-center {
+    text-align-last: center;
+}
+
+.spotlight.style1.content-align-right {
+    text-align-last: right;
+}
+
+@media screen and (max-width: 736px) and (orientation: portrait) {
+    .spotlight.style1 {
+        text-align: center !important;
+        text-align-last: center !important;
+    }
+}
+
+.items {
+    text-align-last: center;
+}
 
 ul.actions li {
     opacity: 1;
