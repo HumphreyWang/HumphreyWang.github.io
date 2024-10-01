@@ -13,7 +13,7 @@
 	// 等待文档加载完毕
 	$(document).ready(function() {
 		// 获取 fist section 的 offsetTop
-		var firstOffsetTop = $('#first').offset().top;
+		var firstOffsetTop = $('#science').offset().top;
 
 		// 监听页面滚动事件
 		$window.scroll(function() {
