@@ -88,6 +88,10 @@ p {
     }
 }
 
+.gallery.style2 article .caption {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
 .gallery.style2.fixheight article {
     height: 100%;
     width: auto;
