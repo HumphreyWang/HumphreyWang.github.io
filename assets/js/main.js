@@ -241,6 +241,25 @@
 					// Clear move interval.
 						clearInterval(this._gallery_moveIntervalId);
 
+
+				})
+
+				// Touch events for touch devices
+				.on('touchstart', '.inner', function(event) {
+					var $this = $(this);
+					$this.data('startX', event.originalEvent.touches[0].clientX);
+					$this.data('scrollLeftStart', $this.scrollLeft());
+				})
+
+				.on('touchmove', '.inner', function(event) {
+					var $this = $(this),
+						startX = $this.data('startX'),
+						scrollLeftStart = $this.data('scrollLeftStart'),
+						currentX = event.originalEvent.touches[0].clientX,
+						diffX = startX - currentX;
+
+					// Scroll the gallery based on touch movement
+					$this.scrollLeft(scrollLeftStart + diffX);
 				});
 
 		// Lightbox.

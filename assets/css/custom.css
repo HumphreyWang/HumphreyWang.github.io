@@ -88,6 +88,32 @@ p {
     }
 }
 
+.gallery.style2.fixheight article {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+
+    .gallery.style2.fixheight article .caption {
+        padding: 2rem;
+    }
+
+@media screen and (max-width: 980px) {
+
+    .gallery.style2.fixheight article .caption {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    .gallery.style2.fixheight article .caption {
+        padding: 2rem;
+    }
+
+}
+
 .items {
     text-align-last: center;
 }
