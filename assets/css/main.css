@@ -4866,7 +4866,7 @@ input, select, textarea {
 	}
 
 		.spotlight.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
+			padding: 4rem 7rem 2rem 7rem ;
 			-moz-align-self: center;
 			-webkit-align-self: center;
 			-ms-align-self: center;
@@ -7075,7 +7075,7 @@ input, select, textarea {
 		}
 	}
 
-	.gallery.lightbox .modal {
+	.lightbox .modal {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -7110,7 +7110,7 @@ input, select, textarea {
 		z-index: 0;
 	}
 
-		.gallery.lightbox .modal:before {
+		.lightbox .modal:before {
 			-moz-animation: gallery-modal-spinner 1s infinite linear;
 			-webkit-animation: gallery-modal-spinner 1s infinite linear;
 			-ms-animation: gallery-modal-spinner 1s infinite linear;
@@ -7138,7 +7138,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		.gallery.lightbox .modal:after {
+		.lightbox .modal:after {
 			content: '';
 			display: block;
 			position: absolute;
@@ -7153,7 +7153,7 @@ input, select, textarea {
 			background-size: 3rem;
 		}
 
-		.gallery.lightbox .modal .inner {
+		.lightbox .modal .inner {
 			-moz-transform: translateY(0.75rem);
 			-webkit-transform: translateY(0.75rem);
 			-ms-transform: translateY(0.75rem);
@@ -7165,25 +7165,25 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-			.gallery.lightbox .modal .inner img {
+			.lightbox .modal .inner img {
 				display: block;
 				max-width: 90vw;
 				max-height: 85vh;
 				box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
 			}
 
-		.gallery.lightbox .modal.visible {
+		.lightbox .modal.visible {
 			pointer-events: auto;
 			visibility: visible;
 			opacity: 1;
 			z-index: 10001;
 		}
 
-			.gallery.lightbox .modal.visible:before {
+			.lightbox .modal.visible:before {
 				opacity: 1;
 			}
 
-		.gallery.lightbox .modal.loaded .inner {
+		.lightbox .modal.loaded .inner {
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -7195,7 +7195,7 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		.gallery.lightbox .modal.loaded:before {
+		.lightbox .modal.loaded:before {
 			-moz-transition-delay: 0s;
 			-webkit-transition-delay: 0s;
 			-ms-transition-delay: 0s;
@@ -7205,7 +7205,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 980px) {
 
-		.gallery.lightbox .modal .inner img {
+		.lightbox .modal .inner img {
 			max-width: 100vw;
 		}
 
@@ -7218,7 +7218,7 @@ input, select, textarea {
 /* Wrapper (style1) */
 
 	.wrapper.style1 > .inner {
-		padding: 7rem 3.5rem 5rem 3.5rem ;
+		padding: 4rem 3.5rem 2rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 64rem;

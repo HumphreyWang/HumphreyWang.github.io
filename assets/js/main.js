@@ -263,12 +263,12 @@
 				});
 
 		// Lightbox.
-			$('.gallery.lightbox')
+			$('.lightbox')
 				.on('click', 'a', function(event) {
 
 					var $a = $(this),
-						$gallery = $a.parents('.gallery'),
-						$modal = $gallery.children('.modal'),
+						$lightbox = $a.closest('.lightbox'),
+						$modal = $lightbox.children('.modal'),
 						$modalImg = $modal.find('img'),
 						href = $a.attr('href');
 
@@ -288,13 +288,14 @@
 						$modal[0]._locked = true;
 
 					// Set src.
-						$modalImg.attr('src', href);
+						$modalImg.attr({ src: href, alt: $a.find('img').attr('alt') || '' });
+						$modal[0]._opener = this;
 
 					// Set visible.
 						$modal.addClass('visible');
 
 					// Focus.
-						$modal.focus();
+						$modal[0].focus({ preventScroll: true });
 
 					// Delay.
 						setTimeout(function() {
@@ -340,14 +341,15 @@
 									$modal[0]._locked = false;
 
 								// Focus.
-									$body.focus();
+									if (document.activeElement === $modal[0])
+										$modal[0]._opener.focus({ preventScroll: true });
 
 							}, 475);
 
 						}, 125);
 
 				})
-				.on('keypress', '.modal', function(event) {
+				.on('keydown', '.modal', function(event) {
 
 					var $modal = $(this);
 
@@ -357,7 +359,7 @@
 
 				})
 				.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>')
-					.find('img')
+					.children('.modal').find('img')
 						.on('load', function(event) {
 
 							var $modalImg = $(this),
