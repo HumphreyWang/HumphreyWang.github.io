@@ -344,11 +344,7 @@
 						Font: <a href="https://github.com/lxgw/LxgwWenKai-Screen">LXGW WenKai Screen (霞鹜文楷)</a>.
 						Polyhedron icons by <a href="https://www.freepik.com/author/flowicon/icons/generic-black-outline_5167#from_element=resource_detail">Flowicon</a>.
 					</p>
-					<center>
-						<script type="text/javascript" src="//widget.supercounters.com/ssl/hit.js"></script>
-						<script type="text/javascript">sc_hit(1701735,6,5);</script>
-						<noscript><a href="http://www.supercounters.com/">free online counter</a></noscript>
-					</center>
+					<div class="align-center">Visits since Sep 2026: <span id="visit-count">&mdash;</span></div>
 				</div>
 			</footer>
 
@@ -363,6 +359,12 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script data-goatcounter="https://humphreywang.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+		<script>
+			$.getJSON('https://humphreywang.goatcounter.com/counter/TOTAL.json', function(data) {
+				document.getElementById('visit-count').textContent = data.count;
+			});
+		</script>
 
 	</body>
 </html>
